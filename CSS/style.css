@@ -177,3 +177,40 @@ section{
 .hero-img img:hover{
     box-shadow: 14px 10px 15px 15px rgba(95, 94, 9, 0.3);
 }
+
+
+/* waving hand with delay */
+
+.emoji{
+    font-size: 30px;
+    animation: waveing-hand 2.5s infinite;
+    transform-origin: 70% 70%;  
+    display: inline-block;
+}
+
+@keyframes waveing-hand {
+    0% {
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(14deg);
+    } 
+    20%{
+        transform: rotate(-8deg);
+    }
+    30%{
+        transform: rotate(14deg);
+    }
+    40%{
+        transform: rotate(-4deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    } 
+    60%{
+        transform: rotate(0deg);
+    } 
+    100%{
+        transform: rotate(0deg);
+    } 
+}
