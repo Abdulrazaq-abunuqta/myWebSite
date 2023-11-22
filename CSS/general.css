@@ -14,10 +14,10 @@
   
   :root {
     /* --main-color: #009578; */
-    --main-color: #34472b;
+    --main-color: #030201;
     --red-color: #f44336;
-    --text-color: #160909;
-    --action-color: #0b3a63;
+    --yellow-color: #FCA310;
+    --what-color: #eae8e4;
     --heder-text:'Roboto', sans-serif;;
     --artcl-text:'Delius', cursive;
     --2px: 0.125rem;

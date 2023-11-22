@@ -14,6 +14,7 @@ header{
 header img{
     width: 12.5rem;
     height: 100%;
+    transition: 0.5s;
     
 }
 
@@ -23,7 +24,7 @@ header img{
     font-weight: bold;
     text-transform: capitalize;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--yellow-color);
 
 }
 
@@ -46,14 +47,14 @@ header .navigation{
     
 }
 header img:hover{
-    transform: rotate(360deg);
+    transform: scale(1.1);
     transition: 0.5s;
 }
 
 
 
 header  a:visited{
-    color:#b71f25;
+    color:var(--yellow-color);
 
 }
 
@@ -69,7 +70,7 @@ header  a:visited{
 
          
 .btn-grad {
-    background-image: linear-gradient(to right, #52c234 0%, #061700  51%, #52c234  100%);
+    background-image: linear-gradient(to right, var(--yellow-color) 0%, #061700  51%, var(--yellow-color)  100%);
     margin: 10px;
     padding: 15px 45px;
     text-align: center;
@@ -113,6 +114,7 @@ section{
     font-weight:900;
     font-size:var(--20px);
     padding-bottom: 10px;
+    color: var(--yellow-color);
 }
 
 .main h2 span{
@@ -126,30 +128,52 @@ section{
     font-family:var(--heder-text);
     font-weight:900;
     font-size:var(--20px);
-    padding-bottom: 20px;
+    padding-bottom: var(--30px);
+    color: var(--yellow-color);
 }
 
 .main .main-btn{
-    color: #061700;
+    color:var(--main-color);
     background-color: #eae8e4;
-    padding: 15px;
-    border-radius: 10px;
+    /* padding: var(--16px); */
+    padding: 0.9375em 2.1875em;
+    border-radius: var(--10px);
+    letter-spacing: 1.5;
+    display: inline-block;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.main .main-btn:hover{
+    background-color: #a5a4a1;
+    transform: scale(1.1);
     
 }
 
 .main .social-icons{
     padding-top:var(--30px) ;
     display: flex;
-    gap: 20px
+    gap: 10px
+    
 }
 
 .main .social-icons a i{
     color: #eae8e4;
-    size: 40px;
+    transition: 0.5s;
     
+}
+
+.main .social-icons a i:hover{
+    background-color: #a5a4a1;
+    transform: scale(1.1);
 }
 
 .hero-img img{
     width: 250px;
-    box-shadow: 14px 10px 15px 15px rgba(0,0,0,0.1);
+    transition: 0.5s ease;
+}
+
+
+.hero-img img:hover{
+    box-shadow: 14px 10px 15px 15px rgba(95, 94, 9, 0.3);
 }
