@@ -1,0 +1,155 @@
+
+/* Notification bar */
+header{
+    background: #eae8e4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    position: fixed;
+    z-index: 999;
+
+}
+
+header img{
+    width: 12.5rem;
+    height: 100%;
+    
+}
+
+.navigation  a:link{
+    /* margin: 10px; */
+    
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--text-color);
+
+}
+
+header .navigation{
+    position: relative;
+    display: flex;
+    gap: 20px;
+
+}
+
+.navigation a:after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 4px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -10px;
+    transition: 0.5s;
+    
+}
+header img:hover{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+
+
+header  a:visited{
+    color:#b71f25;
+
+}
+
+.navigation a:hover::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -10px;
+}
+
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #52c234 0%, #061700  51%, #52c234  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border: none;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+
+/* hero */
+section{
+    padding: 100px 200px;
+    
+}
+
+.main{
+    width: 100%;
+    padding-top:150px ;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:  var(--main-color);
+    line-height: 1.5;
+    gap: 100px
+}
+
+.main h2{
+    font-family:var(--heder-text);
+    font-weight:900;
+    font-size:var(--20px);
+    padding-bottom: 10px;
+}
+
+.main h2 span{
+    font-family:var(--heder-text);
+    font-weight:900;
+    font-size:var(--30px);
+    color: #eae8e4;
+}
+
+.main h3{
+    font-family:var(--heder-text);
+    font-weight:900;
+    font-size:var(--20px);
+    padding-bottom: 20px;
+}
+
+.main .main-btn{
+    color: #061700;
+    background-color: #eae8e4;
+    padding: 15px;
+    border-radius: 10px;
+    
+}
+
+.main .social-icons{
+    padding-top:var(--30px) ;
+    display: flex;
+    gap: 20px
+}
+
+.main .social-icons a i{
+    color: #eae8e4;
+    size: 40px;
+    
+}
+
+.hero-img img{
+    width: 250px;
+    box-shadow: 14px 10px 15px 15px rgba(0,0,0,0.1);
+}

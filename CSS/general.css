@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    scroll-behavior: smooth;
+  }
+
+  body{
+    font-family: var(--artcl-text);
+  }
+  
+  :root {
+    /* --main-color: #009578; */
+    --main-color: #34472b;
+    --red-color: #f44336;
+    --text-color: #160909;
+    --action-color: #0b3a63;
+    --heder-text:'Roboto', sans-serif;;
+    --artcl-text:'Delius', cursive;
+    --2px: 0.125rem;
+    --4px: 0.25rem;
+    --8px: 0.5rem;
+    --10px: 0.625rem;
+    --12px: 0.75rem;
+    --14px: 0.875rem;
+    --16px: 1rem;
+    --18px: 1.125rem;
+    --20px: 1.25rem;
+    --24px: 1.5rem;
+    --30px: 1.875rem;
+  }
+  
+
+  /* #b71f25
+
+  #34472b
+
+  #201a19
+
+  #eae8e4 */
