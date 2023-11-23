@@ -6,9 +6,10 @@
     border-radius: 5px;
     border: none;
     scroll-behavior: smooth;
+   
   }
 
-  body{
+  body,html{
     font-family: var(--artcl-text);
   }
   
