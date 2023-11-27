@@ -1,6 +1,5 @@
 # Project Name
-my website portfolio
-حق
+my website portfolio Abdulrazaq Abu Nuqta FrontEnd Computer Engineer
 
 ## Introduction
 
