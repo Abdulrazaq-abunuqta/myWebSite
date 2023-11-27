@@ -8,7 +8,6 @@ header{
     width:100%;
     position: fixed;
     z-index: 999;
-
 }
 
 header img{
@@ -93,21 +92,20 @@ header  a:visited{
 
 /* hero */
 
-section{
-    padding: 100px 200px;
-    
-}
-
 .main{
+    /* padding: 150px 200px; */
     width: 100%;
-    padding-top:150px ;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color:  var(--main-color);
     line-height: 1.5;
-    gap: 100px
+    padding: 200px 100px;
+    flex-direction: row;
+    flex-wrap:wrap-reverse;
+    gap: 30px;
+
 }
 
 .main h2{
@@ -219,50 +217,52 @@ section{
 /* services */
 
 .Cards{
-    padding: 100px 200px;
+    padding: 100px;
+    /* padding: 100px 200px; */
     width: 100%;
-    min-width: 100%;
     background-color:var(--yellow-color) ;
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    gap: 60px;
+    /* display:flex;
+    justify-content: center;
+    flex-direction:row;
+    flex-wrap: wrap; */
+    
 }
 
 .titel-services{
     font-family: var(--heder-text);
     font-weight: 900;
-    font-size: 2rem;
-
+    font-size: 2em;
+    margin-bottom: 50px; 
+    text-align: center;
+    position: relative;
 }
 
-.titel-services::after{
+/* .titel-services::after{
     content: "";
-    background-color: var(--main-color);
-    width: 130px;
-    height: 4px;
+    background-color: #f53415;
     display: block;
-    margin-top: 5px;
-}
+    width: 156px;
+    height: 4px;
+} */
 
-.Cards .content{
-    width: 100%;
-    min-width:95vw ;
+.content{
     display: flex;
+    /* width: 100%; */
+    /* min-width:95vw ; */
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
     
 }
 .content .card-one{
     display: flex;
-    flex-direction: column;
-    width: 30%;
-    /* height: 400px; */
-    gap: 30p;
+    flex-direction:column;
+    width: 21.25em;
+    height: 100%;
+    /* gap: 30p; */
     border: 2px black solid;
-    padding: 5rem 1rem;
+    padding: 50px;
+    margin: 15px;
     transition: 0.5s ease;
 
     
@@ -277,28 +277,141 @@ section{
     font-size: 5rem;
     align-self: center;
     padding-bottom: 60px;
+    text-align: center;
+
 }
 .card-one .info{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
+    justify-content:center; */
+    text-align: center;
     line-height: 1.5;
-    gap: 20px;
 }
 
 .card-one .info h3{
     font-family: var(--heder-text);
     font-weight: 900;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-transform:capitalize;
     color: var(--main-color);
     align-self: center;
+    margin-bottom: 15px;
 }
 
 .card-one .info p{
     text-transform:capitalize;
-    font-weight: 600;
     color: var(--what-color);
 
+}
+
+/* project */
+
+.projects .titel-services{
+    color: var(--yellow-color);
+    padding-top: 100px;
+}
+
+.projects{
+    background-color: var(--main-color);
+}
+
+.projects .content{
+    margin-top: 30px;
+}
+
+.project-card{
+    background-color: var(--yellow-color);
+    border: 1px solid var(--what-color) ;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    margin: 20px;
+    border-radius:10px ;
+    transition: 0.7s ease;
+}
+
+.project-card:hover{
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-img{
+    opacity: 0.9;
+}
+
+.project-img img{
+    width: 100%;
+}
+
+.project-info{
+    padding: 1em;
+}
+
+.project-category{
+    font-size: 0.8em;
+    color: var(--what-color);
+}
+
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px ;
+}
+
+.more-details{
+    color: var(--what-color);
+    transition: .5S ease;
+}
+
+.more-details:hover{
+    color: var(--main-color);
+}
+
+
+/* contact */
+
+.contact{
+    background-color: var(--yellow-color);
+    padding: 100px;
+}
+
+/* footer */
+.footer{
+    background-color: var(--main-color);
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p{
+    color: var(--what-color);
+    font-size: 1.3em;
+    font-weight: 600;
+}   
+
+.footer p span{
+    color: var(--yellow-color);
+    font-size: 1.3em;
+    font-weight: 600;
+}   
+
+@media (max-width:1023){
+    header{
+        padding: 12px 24px;
+    }
+    header img{
+        width: 2.5rem;
+        height: 100%;
+        transition: 0.5s;
+        
+    }
+
+    header .navigation{
+        position: relative;
+        display: flex;
+        gap: 5px;
+    
+    }
 }
