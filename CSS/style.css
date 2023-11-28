@@ -84,7 +84,7 @@ header  a:visited{
   }
 
   .btn-grad:hover {
-    background-position: right center; /* change the direction of the change here */
+    background-position: right center; 
     color: #fff;
     text-decoration: none;
   }
@@ -93,9 +93,7 @@ header  a:visited{
 /* hero */
 
 .main{
-    /* padding: 150px 200px; */
     width: 100%;
-    /* min-height: 100vh; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -134,7 +132,6 @@ header  a:visited{
 .main .main-btn{
     color:var(--main-color);
     background-color: #eae8e4;
-    /* padding: var(--16px); */
     padding: 0.9375em 2.1875em;
     border-radius: var(--10px);
     letter-spacing: 1.5;
@@ -218,14 +215,8 @@ header  a:visited{
 
 .Cards{
     padding: 100px;
-    /* padding: 100px 200px; */
     width: 100%;
     background-color:var(--yellow-color) ;
-    /* display:flex;
-    justify-content: center;
-    flex-direction:row;
-    flex-wrap: wrap; */
-    
 }
 
 .titel-services{
@@ -237,18 +228,8 @@ header  a:visited{
     position: relative;
 }
 
-/* .titel-services::after{
-    content: "";
-    background-color: #f53415;
-    display: block;
-    width: 156px;
-    height: 4px;
-} */
-
 .content{
     display: flex;
-    /* width: 100%; */
-    /* min-width:95vw ; */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -259,7 +240,6 @@ header  a:visited{
     flex-direction:column;
     width: 21.25em;
     height: 100%;
-    /* gap: 30p; */
     border: 2px black solid;
     padding: 50px;
     margin: 15px;
@@ -281,10 +261,6 @@ header  a:visited{
 
 }
 .card-one .info{
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center; */
     text-align: center;
     line-height: 1.5;
 }
