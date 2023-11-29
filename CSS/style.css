@@ -150,13 +150,11 @@ header  a:visited{
     padding-top:var(--30px) ;
     display: flex;
     gap: 10px
-    
 }
 
 .main .social-icons a i{
-    color: #eae8e4;
+    color: #eae8e4;  
     transition: 0.5s;
-    
 }
 
 .main .social-icons a i:hover{
@@ -356,14 +354,14 @@ header  a:visited{
 /* footer */
 .footer{
     background-color: var(--main-color);
-    padding: 2em;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
 }
 
 .footer p{
     color: var(--what-color);
-    font-size: 1.3em;
+    font-size: 1;
     font-weight: 600;
 }   
 
@@ -373,21 +371,116 @@ header  a:visited{
     font-weight: 600;
 }   
 
-@media (max-width:1023){
-    header{
-        padding: 12px 24px;
+/* <!-- <!-- mbile-menu --> --> */
+
+#hamburger-icon div{
+    width: 32px;
+    height: 4px;
+    background-color: var(--yellow-color);
+    margin: 6px auto;
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+    list-style: none;
+
+}
+
+.open .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:50px;
+    right: 10px;
+    height: calc(100vh - 70px);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.726);
+    
+}
+
+.mobile-menu li a{
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: var(--what-color);
+
+}
+
+.titel .btnCv{
+    display: none;
+    animation: btnColor 5s infinite ease-in-out;
+    transition: 0.7s;
+}
+
+/* animetion */
+.open .bar1{
+    transform:rotate(-45deg) translate(-6px,6px) ;
+}
+.open .bar3{
+    transform:rotate(45deg) translate(-6px,-8px);
+}
+.open .bar2{
+    opacity: 0.2;
+}
+
+@media(max-width:768px){
+    header .navigation, .btn-grad {
+        display: none;
     }
-    header img{
-        width: 2.5rem;
-        height: 100%;
-        transition: 0.5s;
-        
+    .main .main-btn{
+        margin-bottom: 10px;
+        width: 200px;
+    }
+    .titel .btnCv{
+        display: inline-block;
+        animation: btnColor 5s infinite ease-in-out;
+        transition: 0.7s;
     }
 
-    header .navigation{
-        position: relative;
-        display: flex;
-        gap: 5px;
-    
+    @keyframes btnColor {
+        0% {
+            background-color: red;
+        }
+        10%{
+            background-color: rgb(255, 187, 0);
+        } 
+        20%{
+            background-color: rgb(21, 255, 0);
+        }
+        30%{
+            background-color: rgb(0, 255, 191);
+        }
+        40%{
+            background-color: rgb(25, 0, 255);
+        }
+        50%{
+            background-color: rgb(132, 0, 255);
+        } 
+        60%{
+            background-color: rgb(255, 0, 64);
+        } 
+        100%{
+            background-color: rgb(255, 255, 255);
+        } 
     }
+
+    .footer{
+        width: 100%;
+        background-color: var(--main-color);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer P{
+        font-size: 12px;
+    }
+
+    #hamburger-icon div{
+        display: block;
+    }
+
 }
