@@ -11,6 +11,7 @@ Explanation of the project and its objectives.
 - CSS
 -  media query
 -  flexbox
+-  JavaScript
 
 ## Features
 
